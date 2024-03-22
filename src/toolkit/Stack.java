@@ -1,3 +1,15 @@
+/**
+ * I customized a stack class that contains the following methods:
+ * (1) push(int): Allows the user to push an element to the stack.
+ * (2) pop(): Allows the user to pop the top of the stack.
+ * (3) changeElement(): Allows the user to change an element within the stack.
+ * (4) display(): Displays the stack using square brackets [].
+ * (5) clear(): Clears all the elements of the stack.
+ * (6) isFull(): Checks if the stack is full (for stack overflow monitoring).
+ * (7) isEmpty(): Checks if the stack is empty (for stack underflow monitoring).
+ * (8) getMaxSize(): Getter for the max size of the array.
+ * (9) getTop(): Getter for the top of the array.
+ */
 package toolkit;
 
 import javax.swing.JOptionPane;

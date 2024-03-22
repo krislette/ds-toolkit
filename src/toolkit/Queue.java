@@ -1,3 +1,16 @@
+/**
+ * I customized a queue lass that contains the following methods:
+ * (1) enqueue(int): Allows the user to enqueue an element to the queue.
+ * (2) dequeue(): Allows the user to dequeue the front of the queue.
+ * (3) front(): Allows the user to check the front element of the queue.
+ * (4) rear(): Allows the user to check the rear element of the queue.
+ * (5) display(): Displays the queue using square brackets [].
+ * (6) clear(): Clears all the elements of the queue.
+ * (7) isEmpty(): Checks if the queue is empty.
+ * (8) isFull(): Checks if the queue is full.
+ * (9) getTopFrontIndex(): Getter for the index of the front element.
+ * (10) getRearIndex(): Getter for the index of the rear element.
+ */
 package toolkit;
 
 import javax.swing.JOptionPane;
@@ -12,8 +25,8 @@ public class Queue {
 
     public Queue() {
         this.arrQueue = new Integer[MAX_SIZE];
-        this.intFront = 0; // Initialize front to 0
-        this.intRear = -1; // Initialize rear to -1 (empty queue)
+        this.intFront = 0;
+        this.intRear = -1;
     }
 
     public void enqueue(int intItem) {
@@ -56,6 +69,7 @@ public class Queue {
                                           JOptionPane.WARNING_MESSAGE);
             return -1;
         }
+        
         return arrQueue[intFront];
     }
 
@@ -67,6 +81,7 @@ public class Queue {
                                           JOptionPane.WARNING_MESSAGE);
             return -1;
         }
+        
         return arrQueue[intRear];
     }
 
@@ -99,10 +114,6 @@ public class Queue {
 
     public boolean isFull() {
         return intRear == MAX_SIZE - 1;
-    }
-
-    public int getMaxSize() {
-        return MAX_SIZE;
     }
 
     public int getFrontIndex() {

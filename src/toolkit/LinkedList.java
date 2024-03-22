@@ -1,3 +1,12 @@
+/**
+ * I customized a linked list class that contains the following methods:
+ * (1) insert(int): Allows the user to insert an element to the list.
+ * (2) delete(int): Allows the user to delete an element from the list.
+ * (3) search(int): Returns a bool value whether an element exists or not.
+ * (4) display(): Displays the linked list using square brackets [].
+ * (5) isEmpty(): Returns a bool value checking if the list is empty or not.
+ * (6) clear(): Clears all the elements of the linked list.
+ */
 package toolkit;
 
 public class LinkedList {

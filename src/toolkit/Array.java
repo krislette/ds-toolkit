@@ -1,3 +1,12 @@
+/**
+ * I customized an array class that contains the following methods:
+ * (1) insert(int): Allows the user to insert an element to the array.
+ * (2) delete(int): Allows the user to delete an element from the array.
+ * (3) search(int): Searches for an element by returning its index, else, -1.
+ * (4) isEmpty(): Returns a bool value checking if the array is empty or not.
+ * (5) clear(): Clears all the elements of the array.
+ * (6) toString(): Override of the original toString() method.
+ */
 package toolkit;
 
 import javax.swing.JOptionPane;

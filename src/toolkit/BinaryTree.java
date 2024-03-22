@@ -1,3 +1,17 @@
+/**
+ * I customized a tree class that contains the following methods:
+ * (1) insert(int): Allows the user to insert an element to the tree.
+ * (2) delete(int): Allows the user to delete an element from the tree.
+ * (3) search(int): Returns the value if it exists in the tree, else null.
+ * (4) display(): Displays the tree using parenthetical form.
+ * (5) displayStructure(): Displays the parents, leaves, and level of the tree.
+ * (6) findParentNodes(): Helper method for finding the parent nodes of the tree.
+ * (7) findLeafNodes(): Helper method for finding the leaf nodes of the tree.
+ * (8) displayParentheticalForm(): Helper method for displaying in parenthetical form.
+ * (9) findTreeLevel(): Helper method for finding the level of the tree.
+ * (10) isEmpty(): Checks if the tree is empty.
+ * (11) clear(): Clears all the elements of the tree.
+ */
 package toolkit;
 
 public class BinaryTree {
@@ -9,7 +23,6 @@ public class BinaryTree {
     }
  
     public Node insert(Node nodeNew, int intKey) {
-        // If the tree is empty, return a new node
         if (nodeNew == null) {
             nodeNew = new Node(intKey);
             return nodeNew;
@@ -68,7 +81,7 @@ public class BinaryTree {
 
     public StringBuilder display() {
         StringBuilder sbTreeString = new StringBuilder();
-        displaySetNotation(nodeRoot, sbTreeString);
+        displayParentheticalForm(nodeRoot, sbTreeString);
         
         return sbTreeString;
     }
@@ -108,7 +121,7 @@ public class BinaryTree {
         findLeafNodes(node.nodeRight, sbTreeString);
     }
     
-    private void displaySetNotation(Node node, StringBuilder sbTreeString) {
+    private void displayParentheticalForm(Node node, StringBuilder sbTreeString) {
         if (node == null) return;
     
         sbTreeString.append("(").append(node.intData);
@@ -117,7 +130,7 @@ public class BinaryTree {
             sbTreeString.append(" -> ");
 
             if (node.nodeLeft != null) {
-                displaySetNotation(node.nodeLeft, sbTreeString);
+                displayParentheticalForm(node.nodeLeft, sbTreeString);
             } else {
                 sbTreeString.append("null");
             }
@@ -125,7 +138,7 @@ public class BinaryTree {
             sbTreeString.append(", ");
     
             if (node.nodeRight != null) {
-                displaySetNotation(node.nodeRight, sbTreeString);
+                displayParentheticalForm(node.nodeRight, sbTreeString);
             } else {
                 sbTreeString.append("null");
             }
