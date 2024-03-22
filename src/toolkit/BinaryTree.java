@@ -111,7 +111,7 @@ public class BinaryTree {
     private void displaySetNotation(Node node, StringBuilder sbTreeString) {
         if (node == null) return;
     
-        sbTreeString.append("{").append(node.intData);
+        sbTreeString.append("(").append(node.intData);
     
         if (node.nodeLeft != null || node.nodeRight != null) {
             sbTreeString.append(" -> ");
@@ -131,7 +131,7 @@ public class BinaryTree {
             }
         }
     
-        sbTreeString.append("}");
+        sbTreeString.append(")");
     }
 
     private int findTreeLevel(Node node) {

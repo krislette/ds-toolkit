@@ -1,6 +1,5 @@
 package toolkit;
 
-import java.util.*;
 import javax.swing.*;
 
 public class Toolkit extends javax.swing.JFrame {
@@ -30,7 +29,7 @@ public class Toolkit extends javax.swing.JFrame {
         setResizable(false);
         setLocationRelativeTo(null);
     }
-
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -42,9 +41,9 @@ public class Toolkit extends javax.swing.JFrame {
         btnQueue = new javax.swing.JButton();
         btnStack = new javax.swing.JButton();
         btnTree = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         pnlArray = new javax.swing.JPanel();
         btnArrayBack = new javax.swing.JButton();
         btnCreateArray = new javax.swing.JButton();
@@ -63,6 +62,7 @@ public class Toolkit extends javax.swing.JFrame {
         tpArrayDelete = new javax.swing.JTextPane();
         jScrollPane5 = new javax.swing.JScrollPane();
         tpArraySearch = new javax.swing.JTextPane();
+        jLabel2 = new javax.swing.JLabel();
         pnlLinkedList = new javax.swing.JPanel();
         pnlLinkedListBack = new javax.swing.JButton();
         btnCreateLinkedList = new javax.swing.JButton();
@@ -81,6 +81,7 @@ public class Toolkit extends javax.swing.JFrame {
         tpArrayDelete1 = new javax.swing.JTextPane();
         jScrollPane10 = new javax.swing.JScrollPane();
         tpArraySearch1 = new javax.swing.JTextPane();
+        jLabel4 = new javax.swing.JLabel();
         pnlStack = new javax.swing.JPanel();
         btnStackBack = new javax.swing.JButton();
         btnCreateStack = new javax.swing.JButton();
@@ -99,6 +100,7 @@ public class Toolkit extends javax.swing.JFrame {
         tpArrayDelete2 = new javax.swing.JTextPane();
         jScrollPane15 = new javax.swing.JScrollPane();
         tpArraySearch2 = new javax.swing.JTextPane();
+        jLabel5 = new javax.swing.JLabel();
         pnlQueue = new javax.swing.JPanel();
         btnQueueBack = new javax.swing.JButton();
         btnCreateQueue = new javax.swing.JButton();
@@ -118,6 +120,7 @@ public class Toolkit extends javax.swing.JFrame {
         jScrollPane20 = new javax.swing.JScrollPane();
         tpArraySearch3 = new javax.swing.JTextPane();
         btnDisplayQueue = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
         pnlTree = new javax.swing.JPanel();
         pnlTreeBack = new javax.swing.JButton();
         btnCreateTree = new javax.swing.JButton();
@@ -136,6 +139,7 @@ public class Toolkit extends javax.swing.JFrame {
         tpArrayDelete4 = new javax.swing.JTextPane();
         jScrollPane25 = new javax.swing.JScrollPane();
         tpArraySearch4 = new javax.swing.JTextPane();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(700, 400));
@@ -145,6 +149,7 @@ public class Toolkit extends javax.swing.JFrame {
 
         pnlLanding.setBackground(new java.awt.Color(255, 255, 255));
         pnlLanding.setPreferredSize(new java.awt.Dimension(812, 450));
+        pnlLanding.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnArray.setBackground(new java.awt.Color(29, 29, 29));
         btnArray.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -157,6 +162,7 @@ public class Toolkit extends javax.swing.JFrame {
                 btnArrayActionPerformed(evt);
             }
         });
+        pnlLanding.add(btnArray, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 30, 180, 65));
 
         btnLinkedList.setBackground(new java.awt.Color(29, 29, 29));
         btnLinkedList.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -169,6 +175,7 @@ public class Toolkit extends javax.swing.JFrame {
                 btnLinkedListActionPerformed(evt);
             }
         });
+        pnlLanding.add(btnLinkedList, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 110, 180, 65));
 
         btnQueue.setBackground(new java.awt.Color(29, 29, 29));
         btnQueue.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -181,6 +188,7 @@ public class Toolkit extends javax.swing.JFrame {
                 btnQueueActionPerformed(evt);
             }
         });
+        pnlLanding.add(btnQueue, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 270, 180, 65));
 
         btnStack.setBackground(new java.awt.Color(29, 29, 29));
         btnStack.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -193,6 +201,7 @@ public class Toolkit extends javax.swing.JFrame {
                 btnStackActionPerformed(evt);
             }
         });
+        pnlLanding.add(btnStack, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 190, 180, 65));
 
         btnTree.setBackground(new java.awt.Color(29, 29, 29));
         btnTree.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -205,73 +214,31 @@ public class Toolkit extends javax.swing.JFrame {
                 btnTreeActionPerformed(evt);
             }
         });
+        pnlLanding.add(btnTree, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 350, 180, 65));
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel2.setText("Welcome to");
+        jLabel3.setFont(new java.awt.Font("Rockwell", 1, 45)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(248, 248, 248));
+        jLabel3.setText("Data Structures Toolkit ");
+        pnlLanding.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 610, 70));
 
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel3.setText("Data Structures");
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/toolkit/brain2.png"))); // NOI18N
+        pnlLanding.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 550, 360));
 
-        jLabel4.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel4.setText("Toolkit!");
-
-        org.jdesktop.layout.GroupLayout pnlLandingLayout = new org.jdesktop.layout.GroupLayout(pnlLanding);
-        pnlLanding.setLayout(pnlLandingLayout);
-        pnlLandingLayout.setHorizontalGroup(
-            pnlLandingLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, pnlLandingLayout.createSequentialGroup()
-                .add(pnlLandingLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                    .add(pnlLandingLayout.createSequentialGroup()
-                        .add(59, 59, 59)
-                        .add(pnlLandingLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(jLabel3)
-                            .add(jLabel4)
-                            .add(jLabel2))
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .add(btnArray, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 180, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                    .add(pnlLandingLayout.createSequentialGroup()
-                        .add(62, 62, 62)
-                        .add(btnStack, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 180, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .add(77, 77, 77)
-                        .add(btnQueue, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 180, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 71, Short.MAX_VALUE)
-                .add(pnlLandingLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(org.jdesktop.layout.GroupLayout.TRAILING, btnTree, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 180, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(org.jdesktop.layout.GroupLayout.TRAILING, btnLinkedList, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 180, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .add(62, 62, 62))
-        );
-        pnlLandingLayout.setVerticalGroup(
-            pnlLandingLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(pnlLandingLayout.createSequentialGroup()
-                .add(45, 45, 45)
-                .add(pnlLandingLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(pnlLandingLayout.createSequentialGroup()
-                        .add(24, 24, 24)
-                        .add(jLabel2)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jLabel3)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jLabel4)
-                        .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .add(pnlLandingLayout.createSequentialGroup()
-                        .add(pnlLandingLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(btnArray, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnLinkedList, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 55, Short.MAX_VALUE)
-                        .add(pnlLandingLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(btnTree, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnQueue, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnStack, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 150, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                        .add(50, 50, 50))))
-        );
+        jLabel1.setBackground(new java.awt.Color(51, 0, 0));
+        jLabel1.setForeground(new java.awt.Color(249, 243, 243));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/toolkit/landing.png"))); // NOI18N
+        pnlLanding.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -10, 830, 470));
 
         pnlBackground.add(pnlLanding, "card2");
 
         pnlArray.setBackground(new java.awt.Color(29, 29, 29));
         pnlArray.setForeground(new java.awt.Color(29, 29, 29));
+        pnlArray.setPreferredSize(new java.awt.Dimension(812, 450));
+        pnlArray.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnArrayBack.setBackground(new java.awt.Color(248, 243, 243));
+        btnArrayBack.setBackground(new java.awt.Color(29, 29, 29));
         btnArrayBack.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnArrayBack.setForeground(new java.awt.Color(255, 255, 255));
         btnArrayBack.setText("Back");
         btnArrayBack.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnArrayBack.setFocusable(false);
@@ -281,9 +248,11 @@ public class Toolkit extends javax.swing.JFrame {
                 btnArrayBackActionPerformed(evt);
             }
         });
+        pnlArray.add(btnArrayBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 390, 173, 40));
 
-        btnCreateArray.setBackground(new java.awt.Color(248, 243, 243));
+        btnCreateArray.setBackground(new java.awt.Color(29, 29, 29));
         btnCreateArray.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnCreateArray.setForeground(new java.awt.Color(255, 255, 255));
         btnCreateArray.setText("Create Array");
         btnCreateArray.setToolTipText("");
         btnCreateArray.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -294,9 +263,11 @@ public class Toolkit extends javax.swing.JFrame {
                 btnCreateArrayActionPerformed(evt);
             }
         });
+        pnlArray.add(btnCreateArray, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 287, 140, 40));
 
-        btnInsertArray.setBackground(new java.awt.Color(248, 243, 243));
+        btnInsertArray.setBackground(new java.awt.Color(29, 29, 29));
         btnInsertArray.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnInsertArray.setForeground(new java.awt.Color(255, 255, 255));
         btnInsertArray.setText("Insert Element");
         btnInsertArray.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnInsertArray.setFocusable(false);
@@ -306,9 +277,11 @@ public class Toolkit extends javax.swing.JFrame {
                 btnInsertArrayActionPerformed(evt);
             }
         });
+        pnlArray.add(btnInsertArray, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 287, 140, 40));
 
-        btnDeleteArray.setBackground(new java.awt.Color(248, 243, 243));
+        btnDeleteArray.setBackground(new java.awt.Color(29, 29, 29));
         btnDeleteArray.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnDeleteArray.setForeground(new java.awt.Color(255, 255, 255));
         btnDeleteArray.setText("Delete Element");
         btnDeleteArray.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnDeleteArray.setFocusable(false);
@@ -318,9 +291,11 @@ public class Toolkit extends javax.swing.JFrame {
                 btnDeleteArrayActionPerformed(evt);
             }
         });
+        pnlArray.add(btnDeleteArray, new org.netbeans.lib.awtextra.AbsoluteConstraints(334, 287, 140, 40));
 
-        btnSearchArray.setBackground(new java.awt.Color(248, 243, 243));
+        btnSearchArray.setBackground(new java.awt.Color(29, 29, 29));
         btnSearchArray.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnSearchArray.setForeground(new java.awt.Color(255, 255, 255));
         btnSearchArray.setText("Search Element");
         btnSearchArray.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnSearchArray.setFocusable(false);
@@ -330,9 +305,11 @@ public class Toolkit extends javax.swing.JFrame {
                 btnSearchArrayActionPerformed(evt);
             }
         });
+        pnlArray.add(btnSearchArray, new org.netbeans.lib.awtextra.AbsoluteConstraints(495, 287, 140, 40));
 
-        btnDisplayArray.setBackground(new java.awt.Color(248, 243, 243));
+        btnDisplayArray.setBackground(new java.awt.Color(29, 29, 29));
         btnDisplayArray.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnDisplayArray.setForeground(new java.awt.Color(255, 255, 255));
         btnDisplayArray.setText("Display Array");
         btnDisplayArray.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnDisplayArray.setFocusable(false);
@@ -342,106 +319,70 @@ public class Toolkit extends javax.swing.JFrame {
                 btnDisplayArrayActionPerformed(evt);
             }
         });
+        pnlArray.add(btnDisplayArray, new org.netbeans.lib.awtextra.AbsoluteConstraints(653, 287, 140, 40));
 
         lblArray.setBackground(new java.awt.Color(255, 255, 255));
         lblArray.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         lblArray.setForeground(new java.awt.Color(255, 255, 255));
         lblArray.setText("ARRAY");
+        pnlArray.add(lblArray, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 17, -1, -1));
+
+        jScrollPane1.setBackground(new java.awt.Color(29, 29, 29));
+        jScrollPane1.setForeground(new java.awt.Color(255, 255, 255));
 
         tpArrayCreate.setEditable(false);
+        tpArrayCreate.setBackground(new java.awt.Color(29, 29, 29));
+        tpArrayCreate.setForeground(new java.awt.Color(255, 255, 255));
         tpArrayCreate.setText("This will allow you to create an array. Remember that you are only allowed to create one array per action item in the Array.");
         jScrollPane1.setViewportView(tpArrayCreate);
 
+        pnlArray.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 108, 140, 140));
+
         tpArrayDisplay.setEditable(false);
+        tpArrayDisplay.setBackground(new java.awt.Color(29, 29, 29));
+        tpArrayDisplay.setForeground(new java.awt.Color(255, 255, 255));
         tpArrayDisplay.setText("This will allow you to display the existing array and the elements may vary depending on the array manipulation based on the previous tasks.");
         jScrollPane2.setViewportView(tpArrayDisplay);
 
+        pnlArray.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(653, 108, 140, 140));
+
         tpArrayInsert.setEditable(false);
+        tpArrayInsert.setBackground(new java.awt.Color(29, 29, 29));
+        tpArrayInsert.setForeground(new java.awt.Color(255, 255, 255));
         tpArrayInsert.setText("This will allow you to insert elements into the array one at a time.");
         jScrollPane3.setViewportView(tpArrayInsert);
 
+        pnlArray.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 108, 140, 140));
+
         tpArrayDelete.setEditable(false);
+        tpArrayDelete.setBackground(new java.awt.Color(29, 29, 29));
+        tpArrayDelete.setForeground(new java.awt.Color(255, 255, 255));
         tpArrayDelete.setText("This will allow you delete an element in the array. You are not allowed to delete an element that doesn’t exist within the array.");
         jScrollPane4.setViewportView(tpArrayDelete);
 
+        pnlArray.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(334, 108, 140, 140));
+
         tpArraySearch.setEditable(false);
+        tpArraySearch.setBackground(new java.awt.Color(29, 29, 29));
+        tpArraySearch.setForeground(new java.awt.Color(255, 255, 255));
         tpArraySearch.setText("This will allow you to search an element within the array.");
         jScrollPane5.setViewportView(tpArraySearch);
 
-        org.jdesktop.layout.GroupLayout pnlArrayLayout = new org.jdesktop.layout.GroupLayout(pnlArray);
-        pnlArray.setLayout(pnlArrayLayout);
-        pnlArrayLayout.setHorizontalGroup(
-            pnlArrayLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, pnlArrayLayout.createSequentialGroup()
-                .add(pnlArrayLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(pnlArrayLayout.createSequentialGroup()
-                        .add(18, 18, 18)
-                        .add(pnlArrayLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                            .add(lblArray)
-                            .add(pnlArrayLayout.createSequentialGroup()
-                                .add(pnlArrayLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
-                                    .add(pnlArrayLayout.createSequentialGroup()
-                                        .add(jScrollPane1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                        .add(18, 18, 18)
-                                        .add(jScrollPane3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                                    .add(pnlArrayLayout.createSequentialGroup()
-                                        .add(btnCreateArray, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                        .add(18, 18, 18)
-                                        .add(btnInsertArray, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                                .add(18, 18, 18)
-                                .add(pnlArrayLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
-                                    .add(btnDeleteArray, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
-                                    .add(jScrollPane4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                                .add(21, 21, 21)
-                                .add(pnlArrayLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, jScrollPane5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                    .add(org.jdesktop.layout.GroupLayout.TRAILING, btnSearchArray, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))
-                        .add(18, 18, 18)
-                        .add(pnlArrayLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(jScrollPane2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnDisplayArray, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                        .add(0, 0, Short.MAX_VALUE))
-                    .add(pnlArrayLayout.createSequentialGroup()
-                        .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .add(btnArrayBack, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 173, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                .add(19, 19, 19))
-        );
-        pnlArrayLayout.setVerticalGroup(
-            pnlArrayLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(pnlArrayLayout.createSequentialGroup()
-                .add(pnlArrayLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(pnlArrayLayout.createSequentialGroup()
-                        .add(17, 17, 17)
-                        .add(lblArray)
-                        .add(63, 63, 63)
-                        .add(pnlArrayLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                            .add(jScrollPane5, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(jScrollPane2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                    .add(pnlArrayLayout.createSequentialGroup()
-                        .add(108, 108, 108)
-                        .add(pnlArrayLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                            .add(jScrollPane1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(jScrollPane3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(jScrollPane4, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                        .add(39, 39, 39)
-                        .add(pnlArrayLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(btnCreateArray, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnDeleteArray, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnSearchArray, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnInsertArray, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnDisplayArray, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 64, Short.MAX_VALUE)
-                .add(btnArrayBack, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(20, 20, 20))
-        );
+        pnlArray.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(495, 108, 140, 140));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/toolkit/landing.png"))); // NOI18N
+        pnlArray.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -2, 820, 460));
 
         pnlBackground.add(pnlArray, "card3");
 
         pnlLinkedList.setBackground(new java.awt.Color(29, 29, 29));
         pnlLinkedList.setForeground(new java.awt.Color(29, 29, 29));
+        pnlLinkedList.setPreferredSize(new java.awt.Dimension(812, 450));
+        pnlLinkedList.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        pnlLinkedListBack.setBackground(new java.awt.Color(248, 243, 243));
+        pnlLinkedListBack.setBackground(new java.awt.Color(24, 24, 24));
         pnlLinkedListBack.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        pnlLinkedListBack.setForeground(new java.awt.Color(255, 255, 255));
         pnlLinkedListBack.setText("Back");
         pnlLinkedListBack.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         pnlLinkedListBack.setFocusable(false);
@@ -451,9 +392,11 @@ public class Toolkit extends javax.swing.JFrame {
                 pnlLinkedListBackActionPerformed(evt);
             }
         });
+        pnlLinkedList.add(pnlLinkedListBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 390, 173, 40));
 
-        btnCreateLinkedList.setBackground(new java.awt.Color(248, 243, 243));
+        btnCreateLinkedList.setBackground(new java.awt.Color(24, 24, 24));
         btnCreateLinkedList.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnCreateLinkedList.setForeground(new java.awt.Color(255, 255, 255));
         btnCreateLinkedList.setText("Create List");
         btnCreateLinkedList.setToolTipText("");
         btnCreateLinkedList.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -464,9 +407,11 @@ public class Toolkit extends javax.swing.JFrame {
                 btnCreateLinkedListActionPerformed(evt);
             }
         });
+        pnlLinkedList.add(btnCreateLinkedList, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 287, 140, 40));
 
-        btnInsertLinkedList.setBackground(new java.awt.Color(248, 243, 243));
+        btnInsertLinkedList.setBackground(new java.awt.Color(24, 24, 24));
         btnInsertLinkedList.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnInsertLinkedList.setForeground(new java.awt.Color(255, 255, 255));
         btnInsertLinkedList.setText("Insert Element");
         btnInsertLinkedList.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnInsertLinkedList.setFocusable(false);
@@ -476,9 +421,11 @@ public class Toolkit extends javax.swing.JFrame {
                 btnInsertLinkedListActionPerformed(evt);
             }
         });
+        pnlLinkedList.add(btnInsertLinkedList, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 287, 140, 40));
 
-        btnDeleteLinkedList.setBackground(new java.awt.Color(248, 243, 243));
+        btnDeleteLinkedList.setBackground(new java.awt.Color(24, 24, 24));
         btnDeleteLinkedList.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnDeleteLinkedList.setForeground(new java.awt.Color(255, 255, 255));
         btnDeleteLinkedList.setText("Delete Element");
         btnDeleteLinkedList.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnDeleteLinkedList.setFocusable(false);
@@ -488,9 +435,11 @@ public class Toolkit extends javax.swing.JFrame {
                 btnDeleteLinkedListActionPerformed(evt);
             }
         });
+        pnlLinkedList.add(btnDeleteLinkedList, new org.netbeans.lib.awtextra.AbsoluteConstraints(334, 287, 140, 40));
 
-        btnSearchLinkedList.setBackground(new java.awt.Color(248, 243, 243));
+        btnSearchLinkedList.setBackground(new java.awt.Color(24, 24, 24));
         btnSearchLinkedList.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnSearchLinkedList.setForeground(new java.awt.Color(255, 255, 255));
         btnSearchLinkedList.setText("Search Element");
         btnSearchLinkedList.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnSearchLinkedList.setFocusable(false);
@@ -500,9 +449,11 @@ public class Toolkit extends javax.swing.JFrame {
                 btnSearchLinkedListActionPerformed(evt);
             }
         });
+        pnlLinkedList.add(btnSearchLinkedList, new org.netbeans.lib.awtextra.AbsoluteConstraints(495, 287, 140, 40));
 
-        btnDisplayLinkedList.setBackground(new java.awt.Color(248, 243, 243));
+        btnDisplayLinkedList.setBackground(new java.awt.Color(24, 24, 24));
         btnDisplayLinkedList.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnDisplayLinkedList.setForeground(new java.awt.Color(255, 255, 255));
         btnDisplayLinkedList.setText("Display List");
         btnDisplayLinkedList.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnDisplayLinkedList.setFocusable(false);
@@ -512,110 +463,70 @@ public class Toolkit extends javax.swing.JFrame {
                 btnDisplayLinkedListActionPerformed(evt);
             }
         });
+        pnlLinkedList.add(btnDisplayLinkedList, new org.netbeans.lib.awtextra.AbsoluteConstraints(653, 287, 140, 40));
 
         lblLinkedList.setBackground(new java.awt.Color(255, 255, 255));
         lblLinkedList.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         lblLinkedList.setForeground(new java.awt.Color(255, 255, 255));
         lblLinkedList.setText("LINKED LIST");
+        pnlLinkedList.add(lblLinkedList, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 17, -1, -1));
 
         tpArrayCreate1.setEditable(false);
+        tpArrayCreate1.setBackground(new java.awt.Color(24, 24, 24));
+        tpArrayCreate1.setForeground(new java.awt.Color(255, 255, 255));
         tpArrayCreate1.setText("This will allow you to create a linked list. Remember that the you are only allowed to create one linked list per action item in the linked list.");
         tpArrayCreate1.setToolTipText("");
         tpArrayCreate1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jScrollPane6.setViewportView(tpArrayCreate1);
 
+        pnlLinkedList.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 108, 140, 140));
+
         tpArrayDisplay1.setEditable(false);
+        tpArrayDisplay1.setBackground(new java.awt.Color(24, 24, 24));
+        tpArrayDisplay1.setForeground(new java.awt.Color(255, 255, 255));
         tpArrayDisplay1.setText("This will allow you to display the existing linked list and the elements may vary depending on the linked list manipulation based on the previous tasks.");
         jScrollPane7.setViewportView(tpArrayDisplay1);
 
+        pnlLinkedList.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(653, 108, 140, 140));
+
         tpArrayInsert1.setEditable(false);
+        tpArrayInsert1.setBackground(new java.awt.Color(24, 24, 24));
+        tpArrayInsert1.setForeground(new java.awt.Color(255, 255, 255));
         tpArrayInsert1.setText("This will allow you to insert elements into the linked list one at a time.");
         jScrollPane8.setViewportView(tpArrayInsert1);
 
+        pnlLinkedList.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 108, 140, 140));
+
         tpArrayDelete1.setEditable(false);
+        tpArrayDelete1.setBackground(new java.awt.Color(24, 24, 24));
+        tpArrayDelete1.setForeground(new java.awt.Color(255, 255, 255));
         tpArrayDelete1.setText("This will allow you to delete an element in the linked list. You are also not allowed to delete an element that doesn’t exist within the linked list.");
         jScrollPane9.setViewportView(tpArrayDelete1);
 
+        pnlLinkedList.add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(334, 108, 140, 140));
+
         tpArraySearch1.setEditable(false);
+        tpArraySearch1.setBackground(new java.awt.Color(24, 24, 24));
+        tpArraySearch1.setForeground(new java.awt.Color(255, 255, 255));
         tpArraySearch1.setText("This will allow you to search an element within the linked list.");
         jScrollPane10.setViewportView(tpArraySearch1);
 
-        org.jdesktop.layout.GroupLayout pnlLinkedListLayout = new org.jdesktop.layout.GroupLayout(pnlLinkedList);
-        pnlLinkedList.setLayout(pnlLinkedListLayout);
-        pnlLinkedListLayout.setHorizontalGroup(
-            pnlLinkedListLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, pnlLinkedListLayout.createSequentialGroup()
-                .add(pnlLinkedListLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(pnlLinkedListLayout.createSequentialGroup()
-                        .add(18, 18, 18)
-                        .add(pnlLinkedListLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                            .add(lblLinkedList)
-                            .add(pnlLinkedListLayout.createSequentialGroup()
-                                .add(pnlLinkedListLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
-                                    .add(pnlLinkedListLayout.createSequentialGroup()
-                                        .add(jScrollPane6, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                        .add(18, 18, 18)
-                                        .add(jScrollPane8, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                                    .add(pnlLinkedListLayout.createSequentialGroup()
-                                        .add(btnCreateLinkedList, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                        .add(18, 18, 18)
-                                        .add(btnInsertLinkedList, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                                .add(18, 18, 18)
-                                .add(pnlLinkedListLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
-                                    .add(pnlLinkedListLayout.createSequentialGroup()
-                                        .add(btnDeleteLinkedList, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .add(btnSearchLinkedList, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                                    .add(pnlLinkedListLayout.createSequentialGroup()
-                                        .add(jScrollPane9, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                        .add(21, 21, 21)
-                                        .add(jScrollPane10, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))))
-                        .add(18, 18, 18)
-                        .add(pnlLinkedListLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(jScrollPane7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnDisplayLinkedList, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                        .add(0, 0, Short.MAX_VALUE))
-                    .add(pnlLinkedListLayout.createSequentialGroup()
-                        .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .add(pnlLinkedListBack, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 173, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                .add(19, 19, 19))
-        );
-        pnlLinkedListLayout.setVerticalGroup(
-            pnlLinkedListLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(pnlLinkedListLayout.createSequentialGroup()
-                .add(pnlLinkedListLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(pnlLinkedListLayout.createSequentialGroup()
-                        .add(17, 17, 17)
-                        .add(lblLinkedList)
-                        .add(63, 63, 63)
-                        .add(pnlLinkedListLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                            .add(jScrollPane10, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(jScrollPane7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                    .add(pnlLinkedListLayout.createSequentialGroup()
-                        .add(108, 108, 108)
-                        .add(pnlLinkedListLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                            .add(jScrollPane6, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(jScrollPane8, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(jScrollPane9, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                        .add(39, 39, 39)
-                        .add(pnlLinkedListLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(btnCreateLinkedList, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnDeleteLinkedList, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnSearchLinkedList, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnInsertLinkedList, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnDisplayLinkedList, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 64, Short.MAX_VALUE)
-                .add(pnlLinkedListBack, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(20, 20, 20))
-        );
+        pnlLinkedList.add(jScrollPane10, new org.netbeans.lib.awtextra.AbsoluteConstraints(495, 108, 140, 140));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/toolkit/landing.png"))); // NOI18N
+        pnlLinkedList.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 820, 460));
 
         pnlBackground.add(pnlLinkedList, "card3");
 
         pnlStack.setBackground(new java.awt.Color(29, 29, 29));
         pnlStack.setForeground(new java.awt.Color(29, 29, 29));
+        pnlStack.setMinimumSize(new java.awt.Dimension(820, 460));
+        pnlStack.setPreferredSize(new java.awt.Dimension(812, 450));
+        pnlStack.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnStackBack.setBackground(new java.awt.Color(248, 243, 243));
+        btnStackBack.setBackground(new java.awt.Color(24, 24, 24));
         btnStackBack.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnStackBack.setForeground(new java.awt.Color(255, 255, 255));
         btnStackBack.setText("Back");
         btnStackBack.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnStackBack.setFocusable(false);
@@ -625,9 +536,11 @@ public class Toolkit extends javax.swing.JFrame {
                 btnStackBackActionPerformed(evt);
             }
         });
+        pnlStack.add(btnStackBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 390, 173, 40));
 
-        btnCreateStack.setBackground(new java.awt.Color(248, 243, 243));
+        btnCreateStack.setBackground(new java.awt.Color(24, 24, 24));
         btnCreateStack.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnCreateStack.setForeground(new java.awt.Color(255, 255, 255));
         btnCreateStack.setText("Create Stack");
         btnCreateStack.setToolTipText("");
         btnCreateStack.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -638,9 +551,11 @@ public class Toolkit extends javax.swing.JFrame {
                 btnCreateStackActionPerformed(evt);
             }
         });
+        pnlStack.add(btnCreateStack, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 287, 140, 40));
 
-        btnPushStack.setBackground(new java.awt.Color(248, 243, 243));
+        btnPushStack.setBackground(new java.awt.Color(24, 24, 24));
         btnPushStack.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnPushStack.setForeground(new java.awt.Color(255, 255, 255));
         btnPushStack.setText("Push To Stack");
         btnPushStack.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnPushStack.setFocusable(false);
@@ -650,9 +565,11 @@ public class Toolkit extends javax.swing.JFrame {
                 btnPushStackActionPerformed(evt);
             }
         });
+        pnlStack.add(btnPushStack, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 287, 140, 40));
 
-        btnPopStack.setBackground(new java.awt.Color(248, 243, 243));
+        btnPopStack.setBackground(new java.awt.Color(24, 24, 24));
         btnPopStack.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnPopStack.setForeground(new java.awt.Color(255, 255, 255));
         btnPopStack.setText("Pop Stack");
         btnPopStack.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnPopStack.setFocusable(false);
@@ -662,9 +579,11 @@ public class Toolkit extends javax.swing.JFrame {
                 btnPopStackActionPerformed(evt);
             }
         });
+        pnlStack.add(btnPopStack, new org.netbeans.lib.awtextra.AbsoluteConstraints(334, 287, 140, 40));
 
-        btnChangeStack.setBackground(new java.awt.Color(248, 243, 243));
+        btnChangeStack.setBackground(new java.awt.Color(24, 24, 24));
         btnChangeStack.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnChangeStack.setForeground(new java.awt.Color(255, 255, 255));
         btnChangeStack.setText("Change Element");
         btnChangeStack.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnChangeStack.setFocusable(false);
@@ -674,9 +593,11 @@ public class Toolkit extends javax.swing.JFrame {
                 btnChangeStackActionPerformed(evt);
             }
         });
+        pnlStack.add(btnChangeStack, new org.netbeans.lib.awtextra.AbsoluteConstraints(495, 287, 140, 40));
 
-        btnDisplayStack.setBackground(new java.awt.Color(248, 243, 243));
+        btnDisplayStack.setBackground(new java.awt.Color(24, 24, 24));
         btnDisplayStack.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnDisplayStack.setForeground(new java.awt.Color(255, 255, 255));
         btnDisplayStack.setText("Display Stack");
         btnDisplayStack.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnDisplayStack.setFocusable(false);
@@ -686,108 +607,69 @@ public class Toolkit extends javax.swing.JFrame {
                 btnDisplayStackActionPerformed(evt);
             }
         });
+        pnlStack.add(btnDisplayStack, new org.netbeans.lib.awtextra.AbsoluteConstraints(653, 287, 140, 40));
 
         lblStack.setBackground(new java.awt.Color(255, 255, 255));
         lblStack.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         lblStack.setForeground(new java.awt.Color(255, 255, 255));
         lblStack.setText("STACK");
+        pnlStack.add(lblStack, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 17, -1, -1));
 
         tpArrayCreate2.setEditable(false);
+        tpArrayCreate2.setBackground(new java.awt.Color(24, 24, 24));
+        tpArrayCreate2.setForeground(new java.awt.Color(255, 255, 255));
         tpArrayCreate2.setText("This will allow you to create a stack. Remember that the user is only allowed to create one stack per action item in the Stack.");
         jScrollPane11.setViewportView(tpArrayCreate2);
 
+        pnlStack.add(jScrollPane11, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 108, 140, 140));
+
         tpArrayDisplay2.setEditable(false);
+        tpArrayDisplay2.setBackground(new java.awt.Color(24, 24, 24));
+        tpArrayDisplay2.setForeground(new java.awt.Color(255, 255, 255));
         tpArrayDisplay2.setText("This will allow you to display the existing stack and the elements may vary depending on the stack manipulation based on the previous tasks.");
         jScrollPane12.setViewportView(tpArrayDisplay2);
 
+        pnlStack.add(jScrollPane12, new org.netbeans.lib.awtextra.AbsoluteConstraints(653, 108, 140, 140));
+
         tpArrayInsert2.setEditable(false);
+        tpArrayInsert2.setBackground(new java.awt.Color(24, 24, 24));
+        tpArrayInsert2.setForeground(new java.awt.Color(255, 255, 255));
         tpArrayInsert2.setText("This will allow you to push an element within the stack. This action will be done one at a time. You are not allowed to push beyond the stack size.");
         jScrollPane13.setViewportView(tpArrayInsert2);
 
+        pnlStack.add(jScrollPane13, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 108, 140, 140));
+
         tpArrayDelete2.setEditable(false);
+        tpArrayDelete2.setBackground(new java.awt.Color(24, 24, 24));
+        tpArrayDelete2.setForeground(new java.awt.Color(255, 255, 255));
         tpArrayDelete2.setText("This will allow you to pop an element within the stack. This action will be done one at a time. You are not allowed to pop beyond the stack size of 0.");
         jScrollPane14.setViewportView(tpArrayDelete2);
 
+        pnlStack.add(jScrollPane14, new org.netbeans.lib.awtextra.AbsoluteConstraints(334, 108, 140, 140));
+
         tpArraySearch2.setEditable(false);
+        tpArraySearch2.setBackground(new java.awt.Color(24, 24, 24));
+        tpArraySearch2.setForeground(new java.awt.Color(255, 255, 255));
         tpArraySearch2.setText("This will allow you to change a specific element in the stack.");
         jScrollPane15.setViewportView(tpArraySearch2);
 
-        org.jdesktop.layout.GroupLayout pnlStackLayout = new org.jdesktop.layout.GroupLayout(pnlStack);
-        pnlStack.setLayout(pnlStackLayout);
-        pnlStackLayout.setHorizontalGroup(
-            pnlStackLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, pnlStackLayout.createSequentialGroup()
-                .add(pnlStackLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(pnlStackLayout.createSequentialGroup()
-                        .add(18, 18, 18)
-                        .add(pnlStackLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                            .add(lblStack)
-                            .add(pnlStackLayout.createSequentialGroup()
-                                .add(pnlStackLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
-                                    .add(pnlStackLayout.createSequentialGroup()
-                                        .add(jScrollPane11, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                        .add(18, 18, 18)
-                                        .add(jScrollPane13, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                                    .add(pnlStackLayout.createSequentialGroup()
-                                        .add(btnCreateStack, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                        .add(18, 18, 18)
-                                        .add(btnPushStack, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                                .add(18, 18, 18)
-                                .add(pnlStackLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
-                                    .add(pnlStackLayout.createSequentialGroup()
-                                        .add(btnPopStack, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .add(btnChangeStack, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                                    .add(pnlStackLayout.createSequentialGroup()
-                                        .add(jScrollPane14, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                        .add(21, 21, 21)
-                                        .add(jScrollPane15, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))))
-                        .add(18, 18, 18)
-                        .add(pnlStackLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(jScrollPane12, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnDisplayStack, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                        .add(0, 0, Short.MAX_VALUE))
-                    .add(pnlStackLayout.createSequentialGroup()
-                        .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .add(btnStackBack, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 173, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                .add(19, 19, 19))
-        );
-        pnlStackLayout.setVerticalGroup(
-            pnlStackLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(pnlStackLayout.createSequentialGroup()
-                .add(pnlStackLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(pnlStackLayout.createSequentialGroup()
-                        .add(17, 17, 17)
-                        .add(lblStack)
-                        .add(63, 63, 63)
-                        .add(pnlStackLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                            .add(jScrollPane15, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(jScrollPane12, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                    .add(pnlStackLayout.createSequentialGroup()
-                        .add(108, 108, 108)
-                        .add(pnlStackLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                            .add(jScrollPane11, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(jScrollPane13, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(jScrollPane14, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                        .add(39, 39, 39)
-                        .add(pnlStackLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(btnCreateStack, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnPopStack, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnChangeStack, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnPushStack, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnDisplayStack, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 64, Short.MAX_VALUE)
-                .add(btnStackBack, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(20, 20, 20))
-        );
+        pnlStack.add(jScrollPane15, new org.netbeans.lib.awtextra.AbsoluteConstraints(495, 108, 140, 140));
+
+        jLabel5.setBackground(new java.awt.Color(24, 24, 24));
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/toolkit/landing.png"))); // NOI18N
+        pnlStack.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 820, 460));
 
         pnlBackground.add(pnlStack, "card3");
 
         pnlQueue.setBackground(new java.awt.Color(29, 29, 29));
         pnlQueue.setForeground(new java.awt.Color(29, 29, 29));
+        pnlQueue.setPreferredSize(new java.awt.Dimension(812, 450));
+        pnlQueue.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnQueueBack.setBackground(new java.awt.Color(248, 243, 243));
+        btnQueueBack.setBackground(new java.awt.Color(24, 24, 24));
         btnQueueBack.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnQueueBack.setForeground(new java.awt.Color(255, 255, 255));
         btnQueueBack.setText("Back");
         btnQueueBack.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnQueueBack.setFocusable(false);
@@ -797,9 +679,11 @@ public class Toolkit extends javax.swing.JFrame {
                 btnQueueBackActionPerformed(evt);
             }
         });
+        pnlQueue.add(btnQueueBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 391, 173, 40));
 
-        btnCreateQueue.setBackground(new java.awt.Color(248, 243, 243));
+        btnCreateQueue.setBackground(new java.awt.Color(24, 24, 24));
         btnCreateQueue.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnCreateQueue.setForeground(new java.awt.Color(255, 255, 255));
         btnCreateQueue.setText("Create Queue");
         btnCreateQueue.setToolTipText("");
         btnCreateQueue.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -810,9 +694,11 @@ public class Toolkit extends javax.swing.JFrame {
                 btnCreateQueueActionPerformed(evt);
             }
         });
+        pnlQueue.add(btnCreateQueue, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 287, 140, 40));
 
-        btnEnqueue.setBackground(new java.awt.Color(248, 243, 243));
+        btnEnqueue.setBackground(new java.awt.Color(24, 24, 24));
         btnEnqueue.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnEnqueue.setForeground(new java.awt.Color(255, 255, 255));
         btnEnqueue.setText("Enqueue");
         btnEnqueue.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnEnqueue.setFocusable(false);
@@ -822,9 +708,11 @@ public class Toolkit extends javax.swing.JFrame {
                 btnEnqueueActionPerformed(evt);
             }
         });
+        pnlQueue.add(btnEnqueue, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 287, 140, 40));
 
-        btnDequeue.setBackground(new java.awt.Color(248, 243, 243));
+        btnDequeue.setBackground(new java.awt.Color(24, 24, 24));
         btnDequeue.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnDequeue.setForeground(new java.awt.Color(255, 255, 255));
         btnDequeue.setText("Dequeue");
         btnDequeue.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnDequeue.setFocusable(false);
@@ -834,9 +722,11 @@ public class Toolkit extends javax.swing.JFrame {
                 btnDequeueActionPerformed(evt);
             }
         });
+        pnlQueue.add(btnDequeue, new org.netbeans.lib.awtextra.AbsoluteConstraints(334, 287, 140, 40));
 
-        btnFrontQueue.setBackground(new java.awt.Color(248, 243, 243));
+        btnFrontQueue.setBackground(new java.awt.Color(24, 24, 24));
         btnFrontQueue.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnFrontQueue.setForeground(new java.awt.Color(255, 255, 255));
         btnFrontQueue.setText("Check Front");
         btnFrontQueue.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnFrontQueue.setFocusable(false);
@@ -846,9 +736,11 @@ public class Toolkit extends javax.swing.JFrame {
                 btnFrontQueueActionPerformed(evt);
             }
         });
+        pnlQueue.add(btnFrontQueue, new org.netbeans.lib.awtextra.AbsoluteConstraints(495, 287, 140, 40));
 
-        btnRearQueue.setBackground(new java.awt.Color(248, 243, 243));
+        btnRearQueue.setBackground(new java.awt.Color(24, 24, 24));
         btnRearQueue.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnRearQueue.setForeground(new java.awt.Color(255, 255, 255));
         btnRearQueue.setText("Check Rear");
         btnRearQueue.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnRearQueue.setFocusable(false);
@@ -858,34 +750,57 @@ public class Toolkit extends javax.swing.JFrame {
                 btnRearQueueActionPerformed(evt);
             }
         });
+        pnlQueue.add(btnRearQueue, new org.netbeans.lib.awtextra.AbsoluteConstraints(653, 287, 140, 40));
 
         lblQueue.setBackground(new java.awt.Color(255, 255, 255));
         lblQueue.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         lblQueue.setForeground(new java.awt.Color(255, 255, 255));
         lblQueue.setText("QUEUE");
+        pnlQueue.add(lblQueue, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 17, -1, -1));
 
         tpArrayCreate3.setEditable(false);
+        tpArrayCreate3.setBackground(new java.awt.Color(24, 24, 24));
+        tpArrayCreate3.setForeground(new java.awt.Color(255, 255, 255));
         tpArrayCreate3.setText("This will allow you to create a queue. Remember that you are only allowed to create one queue per action item in the Queue.");
         jScrollPane16.setViewportView(tpArrayCreate3);
 
+        pnlQueue.add(jScrollPane16, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 108, 140, 140));
+
         tpArrayDisplay3.setEditable(false);
+        tpArrayDisplay3.setBackground(new java.awt.Color(24, 24, 24));
+        tpArrayDisplay3.setForeground(new java.awt.Color(255, 255, 255));
         tpArrayDisplay3.setText("This will allow you to see the rear element and index upon display when selecting this option.");
         jScrollPane17.setViewportView(tpArrayDisplay3);
 
+        pnlQueue.add(jScrollPane17, new org.netbeans.lib.awtextra.AbsoluteConstraints(653, 108, 140, 140));
+
         tpArrayInsert3.setEditable(false);
+        tpArrayInsert3.setBackground(new java.awt.Color(24, 24, 24));
+        tpArrayInsert3.setForeground(new java.awt.Color(255, 255, 255));
         tpArrayInsert3.setText("This will allow you to enqueue an element within the queue. This action will be done one at a time.");
         jScrollPane18.setViewportView(tpArrayInsert3);
 
+        pnlQueue.add(jScrollPane18, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 108, 140, 140));
+
         tpArrayDelete3.setEditable(false);
+        tpArrayDelete3.setBackground(new java.awt.Color(24, 24, 24));
+        tpArrayDelete3.setForeground(new java.awt.Color(255, 255, 255));
         tpArrayDelete3.setText("This will allow you to dequeue an element within the queue. This action will be done one at a time.");
         jScrollPane19.setViewportView(tpArrayDelete3);
 
+        pnlQueue.add(jScrollPane19, new org.netbeans.lib.awtextra.AbsoluteConstraints(334, 108, 140, 140));
+
         tpArraySearch3.setEditable(false);
+        tpArraySearch3.setBackground(new java.awt.Color(24, 24, 24));
+        tpArraySearch3.setForeground(new java.awt.Color(255, 255, 255));
         tpArraySearch3.setText("This will allow you to see the front element and index upon display when selecting this option.");
         jScrollPane20.setViewportView(tpArraySearch3);
 
-        btnDisplayQueue.setBackground(new java.awt.Color(248, 243, 243));
+        pnlQueue.add(jScrollPane20, new org.netbeans.lib.awtextra.AbsoluteConstraints(495, 108, 140, 140));
+
+        btnDisplayQueue.setBackground(new java.awt.Color(24, 24, 24));
         btnDisplayQueue.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnDisplayQueue.setForeground(new java.awt.Color(255, 255, 255));
         btnDisplayQueue.setText("Display Queue");
         btnDisplayQueue.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnDisplayQueue.setFocusable(false);
@@ -895,90 +810,21 @@ public class Toolkit extends javax.swing.JFrame {
                 btnDisplayQueueActionPerformed(evt);
             }
         });
+        pnlQueue.add(btnDisplayQueue, new org.netbeans.lib.awtextra.AbsoluteConstraints(244, 345, 320, 40));
 
-        org.jdesktop.layout.GroupLayout pnlQueueLayout = new org.jdesktop.layout.GroupLayout(pnlQueue);
-        pnlQueue.setLayout(pnlQueueLayout);
-        pnlQueueLayout.setHorizontalGroup(
-            pnlQueueLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, pnlQueueLayout.createSequentialGroup()
-                .add(pnlQueueLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(pnlQueueLayout.createSequentialGroup()
-                        .add(pnlQueueLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(pnlQueueLayout.createSequentialGroup()
-                                .add(18, 18, 18)
-                                .add(pnlQueueLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                                    .add(lblQueue)
-                                    .add(pnlQueueLayout.createSequentialGroup()
-                                        .add(pnlQueueLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
-                                            .add(pnlQueueLayout.createSequentialGroup()
-                                                .add(jScrollPane16, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                                .add(18, 18, 18)
-                                                .add(jScrollPane18, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                                            .add(pnlQueueLayout.createSequentialGroup()
-                                                .add(btnCreateQueue, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                                .add(18, 18, 18)
-                                                .add(btnEnqueue, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                                        .add(18, 18, 18)
-                                        .add(pnlQueueLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
-                                            .add(pnlQueueLayout.createSequentialGroup()
-                                                .add(btnDequeue, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .add(btnFrontQueue, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                                            .add(pnlQueueLayout.createSequentialGroup()
-                                                .add(jScrollPane19, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                                .add(21, 21, 21)
-                                                .add(jScrollPane20, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))))
-                            .add(pnlQueueLayout.createSequentialGroup()
-                                .add(244, 244, 244)
-                                .add(btnDisplayQueue, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 320, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                        .add(18, 18, 18)
-                        .add(pnlQueueLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(jScrollPane17, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnRearQueue, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                        .add(0, 0, Short.MAX_VALUE))
-                    .add(pnlQueueLayout.createSequentialGroup()
-                        .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .add(btnQueueBack, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 173, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                .add(19, 19, 19))
-        );
-        pnlQueueLayout.setVerticalGroup(
-            pnlQueueLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(pnlQueueLayout.createSequentialGroup()
-                .add(pnlQueueLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(pnlQueueLayout.createSequentialGroup()
-                        .add(17, 17, 17)
-                        .add(lblQueue)
-                        .add(63, 63, 63)
-                        .add(pnlQueueLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                            .add(jScrollPane20, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(jScrollPane17, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                    .add(pnlQueueLayout.createSequentialGroup()
-                        .add(108, 108, 108)
-                        .add(pnlQueueLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                            .add(jScrollPane16, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(jScrollPane18, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(jScrollPane19, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                        .add(39, 39, 39)
-                        .add(pnlQueueLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(btnCreateQueue, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnDequeue, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnFrontQueue, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnEnqueue, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnRearQueue, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))
-                .add(18, 18, 18)
-                .add(btnDisplayQueue, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .add(btnQueueBack, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(20, 20, 20))
-        );
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/toolkit/landing.png"))); // NOI18N
+        pnlQueue.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 820, 460));
 
         pnlBackground.add(pnlQueue, "card3");
 
         pnlTree.setBackground(new java.awt.Color(29, 29, 29));
         pnlTree.setForeground(new java.awt.Color(29, 29, 29));
+        pnlTree.setPreferredSize(new java.awt.Dimension(812, 450));
+        pnlTree.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        pnlTreeBack.setBackground(new java.awt.Color(248, 243, 243));
+        pnlTreeBack.setBackground(new java.awt.Color(24, 24, 24));
         pnlTreeBack.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        pnlTreeBack.setForeground(new java.awt.Color(255, 255, 255));
         pnlTreeBack.setText("Back");
         pnlTreeBack.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         pnlTreeBack.setFocusable(false);
@@ -988,9 +834,11 @@ public class Toolkit extends javax.swing.JFrame {
                 pnlTreeBackActionPerformed(evt);
             }
         });
+        pnlTree.add(pnlTreeBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 388, 173, 40));
 
-        btnCreateTree.setBackground(new java.awt.Color(248, 243, 243));
+        btnCreateTree.setBackground(new java.awt.Color(24, 24, 24));
         btnCreateTree.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnCreateTree.setForeground(new java.awt.Color(255, 255, 255));
         btnCreateTree.setText("Create Tree");
         btnCreateTree.setToolTipText("");
         btnCreateTree.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -1001,9 +849,11 @@ public class Toolkit extends javax.swing.JFrame {
                 btnCreateTreeActionPerformed(evt);
             }
         });
+        pnlTree.add(btnCreateTree, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 287, 140, 40));
 
-        btnInsertTree.setBackground(new java.awt.Color(248, 243, 243));
+        btnInsertTree.setBackground(new java.awt.Color(24, 24, 24));
         btnInsertTree.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnInsertTree.setForeground(new java.awt.Color(255, 255, 255));
         btnInsertTree.setText("Insert Element");
         btnInsertTree.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnInsertTree.setFocusable(false);
@@ -1013,9 +863,11 @@ public class Toolkit extends javax.swing.JFrame {
                 btnInsertTreeActionPerformed(evt);
             }
         });
+        pnlTree.add(btnInsertTree, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 287, 140, 40));
 
-        btnDeleteTree.setBackground(new java.awt.Color(248, 243, 243));
+        btnDeleteTree.setBackground(new java.awt.Color(24, 24, 24));
         btnDeleteTree.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnDeleteTree.setForeground(new java.awt.Color(255, 255, 255));
         btnDeleteTree.setText("Delete Element");
         btnDeleteTree.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnDeleteTree.setFocusable(false);
@@ -1025,9 +877,11 @@ public class Toolkit extends javax.swing.JFrame {
                 btnDeleteTreeActionPerformed(evt);
             }
         });
+        pnlTree.add(btnDeleteTree, new org.netbeans.lib.awtextra.AbsoluteConstraints(334, 287, 140, 40));
 
-        btnDisplayTreeList.setBackground(new java.awt.Color(248, 243, 243));
+        btnDisplayTreeList.setBackground(new java.awt.Color(24, 24, 24));
         btnDisplayTreeList.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnDisplayTreeList.setForeground(new java.awt.Color(255, 255, 255));
         btnDisplayTreeList.setText("Display Tree");
         btnDisplayTreeList.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnDisplayTreeList.setFocusable(false);
@@ -1037,9 +891,11 @@ public class Toolkit extends javax.swing.JFrame {
                 btnDisplayTreeListActionPerformed(evt);
             }
         });
+        pnlTree.add(btnDisplayTreeList, new org.netbeans.lib.awtextra.AbsoluteConstraints(495, 287, 140, 40));
 
-        btnDisplayTreeStructure.setBackground(new java.awt.Color(248, 243, 243));
+        btnDisplayTreeStructure.setBackground(new java.awt.Color(24, 24, 24));
         btnDisplayTreeStructure.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btnDisplayTreeStructure.setForeground(new java.awt.Color(255, 255, 255));
         btnDisplayTreeStructure.setText("Display Structure");
         btnDisplayTreeStructure.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnDisplayTreeStructure.setFocusable(false);
@@ -1049,100 +905,57 @@ public class Toolkit extends javax.swing.JFrame {
                 btnDisplayTreeStructureActionPerformed(evt);
             }
         });
+        pnlTree.add(btnDisplayTreeStructure, new org.netbeans.lib.awtextra.AbsoluteConstraints(653, 287, 140, 40));
 
         lblTree.setBackground(new java.awt.Color(255, 255, 255));
         lblTree.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         lblTree.setForeground(new java.awt.Color(255, 255, 255));
         lblTree.setText("BINARY TREE");
+        pnlTree.add(lblTree, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 17, -1, -1));
 
         tpArrayCreate4.setEditable(false);
+        tpArrayCreate4.setBackground(new java.awt.Color(24, 24, 24));
+        tpArrayCreate4.setForeground(new java.awt.Color(255, 255, 255));
         tpArrayCreate4.setText("This will allow you to create a binary tree.");
         jScrollPane21.setViewportView(tpArrayCreate4);
 
+        pnlTree.add(jScrollPane21, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 108, 140, 140));
+
         tpArrayDisplay4.setEditable(false);
+        tpArrayDisplay4.setBackground(new java.awt.Color(24, 24, 24));
+        tpArrayDisplay4.setForeground(new java.awt.Color(255, 255, 255));
         tpArrayDisplay4.setText("This will allow you to display the tree structure (Parent Nodes, Leaf Nodes, and the Level of the tree).");
         jScrollPane22.setViewportView(tpArrayDisplay4);
 
+        pnlTree.add(jScrollPane22, new org.netbeans.lib.awtextra.AbsoluteConstraints(653, 108, 140, 140));
+
         tpArrayInsert4.setEditable(false);
+        tpArrayInsert4.setBackground(new java.awt.Color(24, 24, 24));
+        tpArrayInsert4.setForeground(new java.awt.Color(255, 255, 255));
         tpArrayInsert4.setText("This will allow you to insert a node within the binary tree.");
         jScrollPane23.setViewportView(tpArrayInsert4);
 
+        pnlTree.add(jScrollPane23, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 108, 140, 140));
+
         tpArrayDelete4.setEditable(false);
+        tpArrayDelete4.setBackground(new java.awt.Color(24, 24, 24));
+        tpArrayDelete4.setForeground(new java.awt.Color(255, 255, 255));
         tpArrayDelete4.setText("This will allow you to delete a node within the binary tree.");
         jScrollPane24.setViewportView(tpArrayDelete4);
 
+        pnlTree.add(jScrollPane24, new org.netbeans.lib.awtextra.AbsoluteConstraints(334, 108, 140, 140));
+
         tpArraySearch4.setEditable(false);
+        tpArraySearch4.setBackground(new java.awt.Color(24, 24, 24));
+        tpArraySearch4.setForeground(new java.awt.Color(255, 255, 255));
         tpArraySearch4.setText("This will allow you to display the binary tree and see how your elements are inserted in your tree based on the rules of binary tree.");
         jScrollPane25.setViewportView(tpArraySearch4);
 
-        org.jdesktop.layout.GroupLayout pnlTreeLayout = new org.jdesktop.layout.GroupLayout(pnlTree);
-        pnlTree.setLayout(pnlTreeLayout);
-        pnlTreeLayout.setHorizontalGroup(
-            pnlTreeLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, pnlTreeLayout.createSequentialGroup()
-                .add(pnlTreeLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(pnlTreeLayout.createSequentialGroup()
-                        .add(18, 18, 18)
-                        .add(pnlTreeLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                            .add(lblTree)
-                            .add(pnlTreeLayout.createSequentialGroup()
-                                .add(pnlTreeLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
-                                    .add(pnlTreeLayout.createSequentialGroup()
-                                        .add(jScrollPane21, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                        .add(18, 18, 18)
-                                        .add(jScrollPane23, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                                    .add(pnlTreeLayout.createSequentialGroup()
-                                        .add(btnCreateTree, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                        .add(18, 18, 18)
-                                        .add(btnInsertTree, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                                .add(18, 18, 18)
-                                .add(pnlTreeLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
-                                    .add(pnlTreeLayout.createSequentialGroup()
-                                        .add(btnDeleteTree, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .add(btnDisplayTreeList, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                                    .add(pnlTreeLayout.createSequentialGroup()
-                                        .add(jScrollPane24, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                        .add(21, 21, 21)
-                                        .add(jScrollPane25, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))))
-                        .add(18, 18, 18)
-                        .add(pnlTreeLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(jScrollPane22, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnDisplayTreeStructure, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                        .add(0, 0, Short.MAX_VALUE))
-                    .add(pnlTreeLayout.createSequentialGroup()
-                        .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .add(pnlTreeBack, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 173, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                .add(19, 19, 19))
-        );
-        pnlTreeLayout.setVerticalGroup(
-            pnlTreeLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(pnlTreeLayout.createSequentialGroup()
-                .add(pnlTreeLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(pnlTreeLayout.createSequentialGroup()
-                        .add(17, 17, 17)
-                        .add(lblTree)
-                        .add(63, 63, 63)
-                        .add(pnlTreeLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                            .add(jScrollPane25, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(jScrollPane22, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                    .add(pnlTreeLayout.createSequentialGroup()
-                        .add(108, 108, 108)
-                        .add(pnlTreeLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                            .add(jScrollPane21, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(jScrollPane23, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(jScrollPane24, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 140, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                        .add(39, 39, 39)
-                        .add(pnlTreeLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(btnCreateTree, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnDeleteTree, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnDisplayTreeList, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnInsertTree, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(btnDisplayTreeStructure, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 64, Short.MAX_VALUE)
-                .add(pnlTreeBack, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(20, 20, 20))
-        );
+        pnlTree.add(jScrollPane25, new org.netbeans.lib.awtextra.AbsoluteConstraints(495, 108, 140, 140));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/toolkit/landing.png"))); // NOI18N
+        jLabel7.setPreferredSize(new java.awt.Dimension(832, 472));
+        pnlTree.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 820, 460));
 
         pnlBackground.add(pnlTree, "card3");
 
@@ -1152,7 +965,7 @@ public class Toolkit extends javax.swing.JFrame {
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(layout.createSequentialGroup()
                 .addContainerGap()
-                .add(pnlBackground, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(pnlBackground, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 820, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -1715,9 +1528,14 @@ public class Toolkit extends javax.swing.JFrame {
     private javax.swing.JButton btnStack;
     private javax.swing.JButton btnStackBack;
     private javax.swing.JButton btnTree;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane11;
