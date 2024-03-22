@@ -1136,7 +1136,6 @@ public class Toolkit extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDeleteArrayActionPerformed
 
     private void btnInsertArrayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInsertArrayActionPerformed
-        // This is the button responsible for inserting an element into the array.
         while (true) {
             if (!isArrayCreated) {
                 displayUncreatedWarning("an array");
@@ -1152,7 +1151,6 @@ public class Toolkit extends javax.swing.JFrame {
     }//GEN-LAST:event_btnInsertArrayActionPerformed
 
     private void btnCreateArrayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreateArrayActionPerformed
-        // This is the button responsible for creating an array.
         if (isArrayCreated) {
             displayCreationFailed("an array");
             return;
