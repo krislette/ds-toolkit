@@ -18,7 +18,7 @@ If you want to test the source code and run the application on your own device, 
 1. Source Code Installation
    - Download all the files by clicking the `Code` button located above the repository.
 3. Swing Layout Installation
-   -To install Swing Layout, download it from the following link:
+   - To install Swing Layout, download it from the following link:
    https://jar-download.com/?search_box=swing-layout-1.0.4
    After downloading, right-click on the `Libraries` folder of the project in NetBeans IDE, and add the .jar file to that folder.
 4. Absolute Layout Installation
