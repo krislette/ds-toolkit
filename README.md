@@ -27,5 +27,6 @@ If you want to test the source code and run the application on your own device, 
    - Once all required .jar files are downloaded and added to the `Libraries` folder, ensure you have installed all files in the repository, including .png, .java, .form, etc. Then, the app should function    
    properly. You can now run it in your NetBeans IDE.
 # Additional Information
-Project start date: March 18, 2024
+Project start date: March 18, 2024.
+
 Project completion date: March 21, 2024
