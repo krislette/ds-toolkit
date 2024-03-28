@@ -221,7 +221,7 @@ public class Toolkit extends javax.swing.JFrame {
         jLabel3.setText("Data Structures Toolkit ");
         pnlLanding.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 610, 70));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/toolkit/brain2.png"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/toolkit/brain.png"))); // NOI18N
         pnlLanding.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 550, 360));
 
         jLabel1.setBackground(new java.awt.Color(51, 0, 0));
