@@ -1,17 +1,17 @@
 # Application Information
 The .jar file isn't available yet, but you can test the application on your own device using the source code.
-# Application Snapshot
-## Landing Page
+# Application Snapshots
+* Landing Page
 ![image](https://github.com/krislette/toolkit/assets/143507354/2dc1bd0f-f5f8-4622-8688-c91dd4a69ca8)
-## Array Page
+* Array Page
 ![image](https://github.com/krislette/toolkit/assets/143507354/17f0187d-485f-4c34-afa4-470bcc95f077)
-## Linked List Page
+* Linked List Page
 ![image](https://github.com/krislette/toolkit/assets/143507354/7544230d-a59c-4538-8988-e40759a5852d)
-## Stack Page
+* Stack Page
 ![image](https://github.com/krislette/toolkit/assets/143507354/d23d4b78-374e-4526-b476-8a63769518a5)
-## Queue Page
+* Queue Page
 ![image](https://github.com/krislette/toolkit/assets/143507354/2cd3d253-82b4-4b43-afe4-1be1851b352f)
-## Binary Search Tree Page
+* Binary Search Tree Page
 ![image](https://github.com/krislette/toolkit/assets/143507354/8dfb9577-4ba6-465e-9a7a-7d1be9de0b1c)
 # Source Code Configuration
 If you want to test the source code and run the application on your own device, here are the following steps that you should follow.
