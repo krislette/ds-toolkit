@@ -18,14 +18,14 @@ If you want to test the source code and run the application on your own device, 
 1. Source Code Installation
    - Download all the files by clicking the `Code` button located above the repository.
 3. Swing Layout Installation
-   - To install Swing Layout, download it from the following link:
-   https://jar-download.com/?search_box=swing-layout-1.0.4
-   After downloading, right-click on the `Libraries` folder of the project in NetBeans IDE, and add the .jar file to that folder.
+   - To install Swing Layout, [click here](https://jar-download.com/?search_box=swing-layout-1.0.4). After downloading, right-click on the `Libraries` folder of the project in NetBeans IDE, and add the .jar      file to that folder.
 4. Absolute Layout Installation
    - Since Absolute Layout is already a built-in dependency in Java, locate it in your NetBeans directory and include it in the project in the same manner as you added the Swing Layout.
 5. Application Run
    - Once all required .jar files are downloaded and added to the `Libraries` folder, ensure you have installed all files in the repository, including .png, .java, .form, etc. Then, the app should function    
    properly. You can now run it in your NetBeans IDE.
+# Credits
+   Special thanks to my [wife](https://github.com/feiryrej) for improving the frontend.
 # Additional Information
 Project start date: March 18, 2024.
 
